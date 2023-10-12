@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrayerTimes</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather&family=Montserrat&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-Div">
+        <h1 id="main-City" style="color: azure;">المدينة</h1>
+        <span id="date" style="color: azure;">تاريخ</span>
+        <hr style="  height: 2px;background-color: purple; border: none; ">
+    </div>
+
+    <div class="timing">
+
+        <div class="pray-Div" >
+            <div class="salahName">
+                <span style="padding-right: 10px; font-size:30px; color:white " >العشاء</span>
+            </div>
+            <div class="Time-Div">
+                <span id="Isha"></span>
+            </div>
+        </div>
+
+        <div class="pray-Div" >
+            <div class="salahName">
+                <span style="padding-right: 10px; font-size:30px; color:white " >المغرب</span>
+            </div>
+            <div class="Time-Div">
+                <span id="Maghrib"></span>
+            </div>
+        </div>
+
+        <div class="pray-Div" >
+            <div class="salahName">
+                <span style="padding-right: 10px; font-size:30px; color:white " >العصر</span>
+            </div>
+            <div class="Time-Div">
+                <span id="Asr"></span>
+            </div>
+        </div>
+
+        <div class="pray-Div" >
+            <div class="salahName">
+                <span style="padding-right: 10px; font-size:30px; color:white " >الظهر</span>
+            </div>
+            <div class="Time-Div">
+                <span id="Dhuhr"></span>
+            </div>
+        </div>
+
+        <div class="pray-Div" >
+            <div class="salahName">
+                <span style="padding-right: 10px; font-size:30px; color:white ">الفجر</span>
+            </div>
+            <div class="Time-Div">
+                <span id="Fajr"></span>
+            </div>
+            
+        </div>
+ 
+    </div>
+    <center>
+    <div class="custom-select"> 
+        <select name="City" id="City" style="font-size: 20px;">
+            <option value="">Select City</option>
+        </select>
+    </div>
+</center>
+    <script src="./index.js"></script>
+</body>
+</html>
